@@ -6,7 +6,7 @@ var menuState = {
 		var nameLabel = game.add.text(80, 80, 'Herobrine Returns', {font: '50px Courier', fill: '#ffffff'});
 		
 		var startLabel = game.add.text(80, game.world.height-160, '- Press the "S" key for the story.', {font: '25px Courier', fill: '#ffffff'});
-		var startLabel = game.add.text(80, game.world.height-80, '- Press the "W" key to start', {font: '25px Courier', fill: '#ffffff'});
+		// var startLabel = game.add.text(80, game.world.height-80, '- Press the "W" key to start', {font: '25px Courier', fill: '#ffffff'});
 		
 		var button = game.add.button(game.world.centerX - 184.5, 500, 'button', this.actionOnClick, this, 0);
 		var wKey = game.input.keyboard.addKey(Phaser.Keyboard.W);
