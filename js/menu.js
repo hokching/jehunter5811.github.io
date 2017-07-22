@@ -8,6 +8,7 @@ var menuState = {
 		var startLabel = game.add.text(80, game.world.height-160, '- Press the "S" key for the story.', {font: '25px Courier', fill: '#ffffff'});
 		var startLabel = game.add.text(80, game.world.height-80, '- Press the "W" key to start', {font: '25px Courier', fill: '#ffffff'});
 		
+		var button = game.add.button(game.world.centerX - 184.5, 500, 'button', this.actionOnClick, this, 0);
 		var wKey = game.input.keyboard.addKey(Phaser.Keyboard.W);
 		wKey.onDown.addOnce(this.start, this);
 		
@@ -29,22 +30,11 @@ var menuState = {
 		var jKey = game.input.keyboard.addKey(Phaser.Keyboard.J);
 		jKey.onDown.addOnce(this.levelSix, this);
 		
-		game.input.onTap.add(this.onTap, this);
 	}, 
 	
-	onTap: function() {
-		if (doubleTap)
-		{
-	  
-			game.state.start('playLevelOne');
-		
-		}
-		else
-		{
-			game.state.start('playLevelTwo');
-		}
+	actionOnClick: function () {
+		game.state.start('playLevelOne');
 	},
-	
 	start: function () {
 		game.state.start('playLevelOne');
 	},
