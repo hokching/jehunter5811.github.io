@@ -28,7 +28,22 @@ var menuState = {
 		
 		var jKey = game.input.keyboard.addKey(Phaser.Keyboard.J);
 		jKey.onDown.addOnce(this.levelSix, this);
+		
+		game.input.onTap.add(this.onTap, this);
 	}, 
+	
+	onTap: function() {
+		if (doubleTap)
+		{
+	  
+			game.state.start('playLevelOne');
+		
+		}
+		else
+		{
+			game.state.start('playLevelTwo');
+		}
+	},
 	
 	start: function () {
 		game.state.start('playLevelOne');
