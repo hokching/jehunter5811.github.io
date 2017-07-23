@@ -160,7 +160,7 @@ var playLevelFiveState = {
 		//  Player physics properties. Give the little guy a slight bounce.
 		player.body.bounce.y = 0.2;
 		player.body.gravity.y = 300;
-		player.body.collideWorldBounds = true;
+		player.body.collideWorldBounds.x = true;
 
 		//  Our two animations, walking left and right.
 		player.animations.add('left', [2, 3, 4, 5], 15, true);

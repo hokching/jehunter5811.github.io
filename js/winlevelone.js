@@ -5,7 +5,7 @@ var winLevelOneState = {
 		
 		var winLabel = game.add.text(40, 80, "You beat the first level!", {font: '50px Courier', fill: '#ffffff', wordWrap: true, wordWrapWidth: 550});
 		
-		var startLabel = game.add.text(80, game.world.height-80, 'Press the "w" key to move on to level two.', {font: '25px Impact', fill: '#ffffff'});
+		var startLabel = game.add.text(80, game.world.height-80, 'Now, collect 14 emeralds and watch out for creepers and TNT. Press the "w" key to move on to level two.', {font: '25px Impact', fill: '#ffffff', wordWrap: true, wordWrapWidth: 550});
 		winLabel.fixedToCamera = true;
 		winLabel.cameraOffset.setTo(80, 80);
 		startLabel.fixedToCamera = true;

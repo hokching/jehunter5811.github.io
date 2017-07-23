@@ -5,7 +5,7 @@ var storyTwoState = {
 		
 		var nameLabel = game.add.text(80, 80, 'Herobrine Returns', {font: '50px Courier', fill: '#ffffff'});
 		
-		var startLabel = game.add.text(80, game.world.height-250, 'Now, with no weapons and an unfamiliar world around him, Herobrine must battle his way back to his home in Minecraft. Collect emeralds, avoid mobs.', {font: '25px Courier', fill: '#ffffff', wordWrap: true, wordWrapWidth: 550});
+		var startLabel = game.add.text(80, game.world.height-300, 'Now, with no weapons and an unfamiliar world around him, Herobrine must battle his way back to his home in Minecraft. In level one, collect all emeralds and avoid spiders.', {font: '25px Courier', fill: '#ffffff', wordWrap: true, wordWrapWidth: 550});
 		
 		var startLabel = game.add.text(80, game.world.height-70, 'Press the "W" key to start', {font: '25px Courier', fill: '#ffffff'});
 		

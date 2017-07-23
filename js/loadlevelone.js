@@ -41,6 +41,7 @@ var loadLevelOneState = {
 		game.load.spritesheet('arrowDude', 'assets/arrowsprite.png', 75.1, 120);
 		game.load.spritesheet('dragon', 'assets/dragonsprite.png', 221, 111);
 		game.load.spritesheet('bosshealth', 'assets/bosshealth.png', 188.8, 10);
+		game.load.spritesheet('heart', 'assets/heartsprite.png', 133.66, 53);
 		game.load.audio('music','assets/Theyre-Closing-In_Looping.mp3');
 		game.load.audio('emeraldSound','assets/collectcoin.wav');
 		game.load.audio('hitguy','assets/hitguy.wav');
